@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'btn-primary': '#ABEF5F',
+                'black1': '#000000'
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ed447523f5.js" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Rinterio</title>
+
+</head>
+<body class="manrope">
+    <header class="md:container mx-auto">
+        <nav>
+            <section class="navbar bg-base-100 py-4 flex items-center justify-between">
+                <section class="navbar-start flex items-center">
+                    <a class="text-3xl font-extrabold flex items-center gap-3">
+                        <i class="fa-solid fa-arrow-right text-xl bg-btn-primary text-black1 p-2 -rotate-45 rounded-full"></i>
+                        Rinterio
+                    </a>
+                </section>
+                <section class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-5 text-gray-800 font-medium">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </section>
+                <section class="navbar-end hidden md:flex">
+                    <div class="mr-6 rounded bg-white">
+                        <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="mr-6 rounded bg-white">
+                        <i class="fa-sharp-duotone fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <a class="text-xl font-bold flex items-center gap-2 bg-btn-primary text-black1 px-6 py-2 rounded-full">
+                        Book Consult
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-black1 text-btn-primary rounded-full"></i>
+                    </a>
+                </section>
+                <section class="navbar-end lg:hidden">
+                    <button class="btn btn-ghost">
+                        <i class="fa-solid fa-bars text-2xl text-gray-500"></i>
+                    </button>
+                </section>
+            </section>
+        </nav>
+    </header>
+</body>
+</html>
